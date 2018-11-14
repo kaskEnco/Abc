@@ -1,0 +1,171 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/mainEnglishLinearLayout"
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <fragment
+            android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+            android:id="@+id/youtube_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button
+                android:id="@+id/backward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/backward"
+                android:paddingStart="30dp"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                style="?android:attr/borderlessButtonStyle"
+                />
+
+            <Switch
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:id="@+id/swith"
+                android:padding="13dp"
+                android:visibility="visible"/>
+            <Button
+                android:id="@+id/forward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:drawableEnd="@drawable/forward"
+                android:paddingEnd="30dp"
+                android:paddingStart="30dp"
+                style="?android:attr/borderlessButtonStyle"/>
+
+        </TableRow>
+    </TableLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:id="@+id/lin1"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textIsSelectable="true"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+            />
+    <!--</LinearLayout>-->
+        <TableLayout
+         style="@style/TLinActivityMain"
+            android:layout_margin="20dp"
+            android:id="@+id/table">
+            <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="@string/movie_name"
+                android:marqueeRepeatLimit ="marquee_forever"
+                android:textSize="15sp"
+                android:textColor="#111"
+                android:textStyle="bold"
+
+                android:layout_margin="10dp"/>
+
+            <TextView
+
+                android:id="@+id/textMovieName"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/movie_name"
+                android:textSize="15sp"
+
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:onClick="movieName"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/ripple_boarder"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lyricist"
+                    android:textSize="15sp"
+
+                    android:focusable="true"
+                    android:textColor="#111"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+                <TextView
+
+                    android:id="@+id/textLyricsName"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lyricist"
+                    android:textSize="15sp"
+
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:onClick="writer"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:background="@drawable/ripple_boarder"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/years"
+                    android:textSize="15sp"
+
+                    android:textColor="#111"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+                <TextView
+
+                    android:id="@+id/dateyaer"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/year_date"
+                    android:textSize="15sp"
+
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:onClick="dateYear"
+                    android:background="@drawable/ripple_boarder"/>
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

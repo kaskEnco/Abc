@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/alegreya_black_italic</item>
+        <item>@font/alegreya_sc_black</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/atma_bold</item>
+        <item>@font/bowlby_one</item>
+        <item>@font/butcherman</item>
+        <item>@font/gloria_hallelujah</item>
+        <item>@font/macondo_swash_caps</item>
+        <item>@font/sofadi_one</item>
+        <item>@font/trade_winds</item>
+        <item>@font/vampiro_one</item>
+        <item>@font/wallpoet</item>
+    </array>
+</resources>

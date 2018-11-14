@@ -1,0 +1,173 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/mainTeluguLinear"
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment
+        android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+        android:id="@+id/telugu_youtube_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button
+                android:id="@+id/backwardTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/backward"
+                android:paddingStart="30dp"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                style="?android:attr/borderlessButtonStyle" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:id="@+id/swithTelugu"
+                android:padding="13dp"
+                android:visibility="visible"/>
+            <Button
+                android:id="@+id/forwardTelugu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:drawableEnd="@drawable/forward"
+                android:paddingEnd="30dp"
+                android:paddingStart="30dp"
+                style="?android:attr/borderlessButtonStyle"/>
+
+        </TableRow>
+    </TableLayout>
+    <!--<Switch-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="end"-->
+        <!--android:id="@+id/swithTelugu"-->
+        <!--android:visibility="gone"/>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:id="@+id/Tellin1"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+
+                />
+            <!--</LinearLayout>-->
+            <TableLayout
+                style="@style/TLinActivityMain"
+                android:layout_margin="20dp"
+                android:id="@+id/Teltable">
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:text="@string/movie_name"
+                        android:marqueeRepeatLimit ="marquee_forever"
+                        android:textSize="15sp"
+                        android:textColor="#111"
+                        android:textStyle="bold"
+
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+
+                        android:id="@+id/TeltextMovieName"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/movie_name"
+                        android:textSize="15sp"
+
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:onClick="movieName"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:background="@drawable/ripple_boarder"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lyricist"
+                        android:textSize="15sp"
+
+                        android:textColor="#111"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"/>
+                    <TextView
+
+                        android:id="@+id/TeltextLyricsName"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lyricist"
+                        android:textSize="15sp"
+
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:onClick="writer"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:background="@drawable/ripple_boarder"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/years"
+                        android:textSize="15sp"
+
+                        android:textColor="#111"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"/>
+                    <TextView
+
+                        android:id="@+id/Teldateyaer"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/years"
+                        android:textSize="15sp"
+
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:onClick="dateYear"
+                        android:background="@drawable/ripple_boarder"/>
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

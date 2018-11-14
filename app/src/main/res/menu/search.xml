@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search2"
+        android:title="Search"
+        app:showAsAction="ifRoom"
+        android:onClick="search"/>
+
+    <item
+        android:id="@+id/share"
+        android:title="Share Application"
+        app:showAsAction="never"
+        android:onClick="share">
+
+    </item>
+
+    <item
+        android:id="@+id/feedback"
+        android:onClick="feedback"
+        android:title="Feedback"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:id="@+id/menu2"
+        android:title="No Video"
+        app:showAsAction="never"
+        android:checkable="true">
+
+    </item>
+
+    <item
+        android:id="@+id/recent"
+        android:title="Clear Recently Views"
+        app:showAsAction="never"
+        android:onClick="clearDb">
+
+    </item>
+
+
+    <!--<item-->
+        <!--android:id="@+id/menu2"-->
+        <!--app:showAsAction="never"-->
+        <!--android:title="@string/offvideo"-->
+        <!--android:itemTextAppearance="@style/myCustomMenuTextApearance">-->
+
+    <!--</item>-->
+    <item
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:onClick="exit"
+        android:title="@string/exit"
+        app:showAsAction="never">
+
+    </item>
+
+</menu>

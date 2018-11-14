@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardll"
+    android:gravity="center"
+    android:background="@drawable/ripple_boarder"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        card_view:cardBackgroundColor="@color/bag"
+        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_boarder">
+
+            <ProgressBar
+                android:id="@+id/indeterminateBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp" />
+
+            <ImageView
+
+                android:id="@+id/thumbnail"
+                android:layout_width="105dp"
+                android:background="@drawable/ripple_boarder"
+                android:src="@drawable/writ"
+                android:layout_height="120dp"
+                android:layout_marginStart="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/movie_name"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/title"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thumbnail"
+                android:layout_margin="5dp"
+
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:textColor="@color/black"
+                android:text="@string/movie_name"
+                android:ellipsize="end"
+                android:maxLines="1" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+

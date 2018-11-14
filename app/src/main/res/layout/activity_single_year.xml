@@ -1,0 +1,21 @@
+<RelativeLayout android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<android.support.v7.widget.RecyclerView
+    style="@style/RecycleStyle"
+    android:id="@+id/yearsrecv"
+    android:padding="3dp"
+    android:clipToPadding="false">
+
+</android.support.v7.widget.RecyclerView>
+
+    <include
+        layout="@layout/progress_bar_content_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="152dp" />
+</RelativeLayout>

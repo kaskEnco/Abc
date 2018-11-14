@@ -1,0 +1,196 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            style="@style/MainActivityLiinearLayout"
+            android:id="@+id/fisrtLLTrending">
+            <TableLayout
+                style="@style/TLinActivityMain">
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/trendingTextView"
+                        android:layout_weight="0"
+                        android:text="@string/trending"
+                        style="@style/tvOfContent" />
+
+                    <View android:layout_height="wrap_content"
+                        android:id="@+id/view1"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/trendingSeeAll"
+                        style="@style/textviewSeeAll"
+                        android:onClick="trendingSeeAll"
+                        />
+                </TableRow>
+            </TableLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/trendingrecyclerView"
+                style="@style/MainActivityRecycleStyle"
+                />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/MainActivityLiinearLayout"
+            android:id="@+id/fisrtLLLatest">
+            <TableLayout
+                style="@style/TLinActivityMain">
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_weight="0"
+                        android:text="@string/latest"
+                        style="@style/tvOfContent" />
+                    <View android:layout_height="wrap_content"
+                        android:id="@+id/view2"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/latestSeeAll"
+                        style="@style/textviewSeeAll"
+                        android:onClick="latestSeeAll" />
+                </TableRow>
+            </TableLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+
+                style="@style/MainActivityRecycleStyle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MainActivityLiinearLayout"
+            android:id="@+id/fisrtLLWriter">
+            <TableLayout
+                style="@style/TLinActivityMain">
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/yearstextView"
+                        android:layout_weight="0"
+                        android:text="@string/writers_collection"
+                        style="@style/tvOfContent" />
+
+                    <View android:layout_height="wrap_content"
+                        android:id="@+id/view3"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/writresSeeAll"
+                        style="@style/textviewSeeAll"
+                        android:onClick="writerSeeAll" />
+                </TableRow>
+            </TableLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/writersrecyclerView"
+                style="@style/MainActivityRecycleStyle"/>
+        </LinearLayout>
+        <LinearLayout
+
+            android:id="@+id/recentLL"
+            style="@style/MainActivityLiinearLayout">
+            <TableLayout
+                style="@style/TLinActivityMain">
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/recentTextView"
+                        android:layout_weight="0"
+                        android:text="@string/recent"
+                        style="@style/tvOfContent" />
+
+                    <View android:layout_height="wrap_content"
+                        android:id="@+id/recentview1"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/recentSeeAll"
+                        style="@style/textviewSeeAll"
+                        android:onClick="recentSeeAll"/>
+                </TableRow>
+            </TableLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recentRecyclerView"
+                style="@style/MainActivityRecycleStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/yearLL"
+            style="@style/MainActivityLiinearLayout">
+            <TableLayout
+                style="@style/TLinActivityMain">
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/YearTextView"
+                        android:layout_weight="0"
+                        android:text="@string/yearwise"
+                        style="@style/tvOfContent" />
+
+                    <View android:layout_height="wrap_content"
+                        android:id="@+id/yearView1"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/yearSeeAll"
+                        style="@style/textviewSeeAll"
+                        android:onClick="yearsSeeAll"/>
+                </TableRow>
+            </TableLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/yearRecyclerView"
+                style="@style/MainActivityRecycleStyle" />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/MainActivityLiinearLayout"
+            android:id="@+id/allTimeLL">
+            <TableLayout
+                style="@style/TLinActivityMain">
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/textViewAlltime"
+                        android:layout_weight="0"
+                        android:text="@string/alltimehits"
+                        style="@style/tvOfContent" />
+                    <View android:layout_height="wrap_content"
+                        android:id="@+id/view2Alltime"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/allTimeSeeAll"
+                        style="@style/textviewSeeAll"
+                        android:onClick="allTimeSeeAll" />
+                </TableRow>
+            </TableLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/allTimeRecyclerView"
+
+                style="@style/MainActivityRecycleStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--</RelativeLayout>-->
+
+</ScrollView>

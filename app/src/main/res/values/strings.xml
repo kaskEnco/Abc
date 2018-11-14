@@ -1,0 +1,52 @@
+<resources>
+
+    <string name="app_name">Lyricist</string>
+    <string name="seeAll">See All ></string>
+    <string name="latest">Latest Albums</string>
+    <string name="trending">Trending Songs</string>
+    <string name="yearwise">Year Wise</string>
+    <string name="folk">Folk</string>
+    <string name="one">See All ></string>
+    <string name="writers_collection">Writer\'s Collection</string>
+    <string name="telugu">తెలుగు</string>
+    <string name="english">English</string>
+    <string name="writer_name">Writer Name</string>
+    <string name="movie_name">Movie Name:</string>
+    <string name="lyricist">Lyricist(s):</string>
+    <string name="songs">Songs</string>
+    <string name="song_name">Song Name</string>
+    <string name="title_activity_flash_screen">FlashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="dashes">--</string>
+    <string name="progress">Please Wait Your data is loading</string>
+    <string name="lyric_name">Lyric Name</string>
+    <string name="title_lyric">Title</string>
+    <string name="home">Home</string>
+    <string name="exit">Exit</string>
+    <string name="share">Share</string>
+    <string name="feedback">Feedback</string>
+    <string name="share_app">Share Application</string>
+    <string name="image">imageName</string>
+
+    <string name="recent">Recently Viewed</string>
+    <string name="years">Year:</string>
+    <string name="year_date">Year</string>
+    <string name="lyrics">Lyrics</string>
+
+    <string name="onvideo">ON Video</string>
+    <string name="offvideo">OFF Video</string>
+
+    <string name="alltimehits">All Time Hits</string>
+
+    <string name="num">2000</string>
+    <string name="search_here">Search Here</string>
+
+    <string name="clear">Clear</string>
+    <string name="more_songs">More Songs</string>
+    <string name="more_movies">More Movies</string>
+    <string name="more_writers">More Writers</string>
+    <string name="movies">Movies</string>
+    <string name="writers">Writers</string>
+    <string name="see_all"><![CDATA[See All >]]></string>
+</resources>

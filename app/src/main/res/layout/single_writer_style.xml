@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/VerticalLL"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="10dp"
+       style="@style/CardViewStyle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bag">
+
+                <ImageView
+                    android:id="@+id/imageid"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/ripple_boarder"
+                    android:contentDescription="@string/movie_name"
+                    />
+
+            <TextView
+                android:id="@+id/single_songlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="27dp"
+                android:layout_toEndOf="@+id/imageid"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="16sp"
+                android:text="@string/movie_name"
+                android:background="@drawable/ripple_boarder"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+

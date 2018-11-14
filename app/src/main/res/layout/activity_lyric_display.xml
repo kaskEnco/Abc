@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edeeef">
+
+
+    <include layout="@layout/content_main1" />
+
+    <include
+        layout="@layout/progress_bar_content_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:id="@+id/englinearoops"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Sorry we are working on that.
+We will update it as soon as possible."
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

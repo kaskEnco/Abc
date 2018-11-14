@@ -1,0 +1,16 @@
+<shape
+    android:shape="oval"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:topRightRadius="1dp"
+        android:bottomRightRadius="1dp"
+        android:bottomLeftRadius="1dp"
+        android:topLeftRadius="1dp">
+    </corners>
+
+    <size
+        android:height="5dp"
+        android:width="5dp">
+
+    </size>
+</shape>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kasksolutions.lyricist.dummy.com.kasksolutions.home.allclasses.TeluguLyric"
+    android:background="@color/bag"
+    android:id="@+id/relativeLayouttelugu">
+
+    <include layout="@layout/telugu_content_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearoops"
+        android:gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Sorry we are working on that.
+We will update it as soon as possible."
+            android:textSize="25sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Move To English"
+            android:background="@drawable/button_style"
+            android:foreground="@drawable/ripple_boarder"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:onClick="moveToEnglish"/>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/progress_bar_content_main"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

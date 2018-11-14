@@ -1,0 +1,35 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recentSeeAllRecv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fastScrollEnabled="true"
+        android:padding="3dp"
+        android:clipToPadding="false"
+        app:fastScrollHorizontalThumbDrawable="@drawable/thumb_drawable"
+        app:fastScrollHorizontalTrackDrawable="@drawable/line_drawable"
+        app:fastScrollVerticalThumbDrawable="@drawable/thumb_drawable"
+        app:fastScrollVerticalTrackDrawable="@drawable/line_drawable">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear"
+        android:layout_gravity="center"
+        android:text="Clear History"
+        style="?attr/borderlessButtonStyle"
+        android:textStyle="bold"
+        android:onClick="clearDb"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/ripple_boarder"/>
+
+</LinearLayout>
